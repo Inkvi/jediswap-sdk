@@ -15,13 +15,12 @@ import {
   PAIR_CLASS_HASH,
   DEFAULT_CHAIN_ID,
   FEE_TO_SETTER_ADDRESS,
-  PAIR_PROXY_CLASS_HASH
+  PAIR_PROXY_CLASS_HASH, StarknetChainId
 } from '../constants'
 import { sqrt, parseBigintIsh } from '../utils'
 import { InsufficientReservesError, InsufficientInputAmountError } from '../errors'
 import { Token } from './token'
 import { hash } from 'starknet'
-import { StarknetChainId } from 'starknet/dist/constants'
 
 let PAIR_ADDRESS_CACHE: { [token0Address: string]: { [token1Address: string]: string } } = {}
 

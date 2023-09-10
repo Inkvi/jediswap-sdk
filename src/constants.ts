@@ -1,5 +1,4 @@
 import JSBI from 'jsbi'
-import { StarknetChainId } from 'starknet/dist/constants'
 
 // exports for external consumption
 export type BigintIsh = JSBI | bigint | string
@@ -9,6 +8,11 @@ export const DEFAULT_CHAIN_ID = 'MAINNET'
 export enum TradeType {
   EXACT_INPUT,
   EXACT_OUTPUT
+}
+
+export enum StarknetChainId {
+  MAINNET = 'SN_MAIN',
+  TESTNET = 'SN_GOERLI'
 }
 
 export enum Rounding {

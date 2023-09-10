@@ -1,5 +1,5 @@
-import { StarknetChainId } from 'starknet/dist/constants'
 import { Token } from './token'
+import { StarknetChainId } from "../constants";
 
 export class LPToken extends Token {
   token0: Token
